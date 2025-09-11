@@ -5,7 +5,7 @@ export default function ExperienceSection() {
       <div className="max-w-3xl mx-auto space-y-6 reveal">
         <div className="bg-white rounded-lg shadow p-6 text-left">
           <h3 className="text-xl font-semibold text-slate-900">Developer Intern</h3>
-          <p className="text-sm text-slate-500 mb-2">May 2024 - Nov 2024 | OPLUS Research & Development Centre, Hyderabad</p>
+          <p className="text-sm text-slate-500 mb-2">May 2024 - Nov 2024 | Oppo and OnePlus Research & Development Centre, Hyderabad</p>
           <ul className="list-disc list-inside text-slate-600 space-y-1">
             <li>Built web applications using React, Node, SQL for optimized performance.</li>
             <li>Developed Android applications improving UX and functionality.</li>
