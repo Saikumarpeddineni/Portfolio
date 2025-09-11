@@ -1,51 +1,40 @@
 export default function ProjectsSection() {
-  const projects = [
-    {
-      title: "Blogs Application",
-      description: "Full-stack app enabling blog creation with user authentication.",
-      tech: ["ReactJS", "NodeJS", "MongoDB", "Vercel"],
-      link: "https://blogsapp-zeta.vercel.app/",
-      code: "https://github.com/Saikumarpeddineni/blogsapp"
-    },
-    {
-      title: "Multi-level Queue Scheduling",
-      description: "OS project implementing a Multi-Level Queue Scheduling algorithm.",
-      tech: ["C++", "Data Structures", "Algorithms"]
-    },
-    {
-      title: "Student Registration System",
-      description: "Command-line tool for managing student records using linked lists.",
-      tech: ["C++", "Linked Lists"]
-    }
-  ];
-
   return (
-    <section id="projects" className="py-24 bg-white reveal">
-      <div className="container mx-auto px-6 max-w-6xl">
-        <h2 className="text-4xl font-bold text-slate-800 mb-12 text-center">Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((proj, idx) => (
-            <div key={idx} className="bg-white shadow-md rounded-lg p-6 flex flex-col justify-between">
-              <div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">{proj.title}</h3>
-                <p className="text-slate-600 mb-4">{proj.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {proj.tech.map((tech, tid) => (
-                    <span key={tid} className="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">{tech}</span>
-                  ))}
-                </div>
-              </div>
-              {proj.link && (
-                <div className="mt-4 flex space-x-4">
-                  <a href={proj.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 font-semibold">Live Demo</a>
-                  {proj.code && (
-                    <a href={proj.code} target="_blank" rel="noopener noreferrer" className="text-slate-600 font-semibold">Source Code</a>
-                  )}
-                </div>
-              )}
-            </div>
-          ))}
+    <section id="projects" className="py-20 bg-white text-center px-4 sm:px-6 lg:px-8">
+      <h2 className="text-3xl font-bold mb-8 reveal">Projects</h2>
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto reveal">
+        
+        <div className="bg-slate-50 rounded-lg shadow p-6 flex flex-col justify-between">
+          <h3 className="text-xl font-semibold text-slate-900 mb-2">Blogs Application</h3>
+          <p className="text-slate-600 mb-4">Full-stack app for blog management with React, Node, MongoDB.</p>
+          <div className="flex flex-wrap gap-2 mb-4">
+            <span className="skill-tag">React</span>
+            <span className="skill-tag">Node</span>
+            <span className="skill-tag">MongoDB</span>
+          </div>
+          <a href="https://blogsapp-zeta.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            View Project
+          </a>
         </div>
+
+        <div className="bg-slate-50 rounded-lg shadow p-6 flex flex-col justify-between">
+          <h3 className="text-xl font-semibold text-slate-900 mb-2">Queue Scheduler</h3>
+          <p className="text-slate-600 mb-4">Multi-level queue scheduling algorithm implementation in C++.</p>
+          <div className="flex flex-wrap gap-2 mb-4">
+            <span className="skill-tag">C++</span>
+            <span className="skill-tag">Algorithms</span>
+          </div>
+        </div>
+
+        <div className="bg-slate-50 rounded-lg shadow p-6 flex flex-col justify-between">
+          <h3 className="text-xl font-semibold text-slate-900 mb-2">Student Registration</h3>
+          <p className="text-slate-600 mb-4">Linked-list based CLI system in C++ to manage student data.</p>
+          <div className="flex flex-wrap gap-2 mb-4">
+            <span className="skill-tag">C++</span>
+            <span className="skill-tag">Data Structures</span>
+          </div>
+        </div>
+
       </div>
     </section>
   );

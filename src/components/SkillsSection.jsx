@@ -1,19 +1,13 @@
 export default function SkillsSection() {
-  const skills = [
-    "C", "C++", "Python", "Java", "SQL", "HTML", "CSS", "ReactJS",
-    "NodeJS", "ExpressJS", "MongoDB", "MySQL", "SQLite",
-    "Data Structures", "Algorithms", "Operating Systems", "VS Code", "Android Studio"
-  ];
+  const skills = ['C', 'C++', 'Python', 'Java', 'SQL', 'HTML', 'CSS', 'ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB', 'MySQL', 'Data Structures', 'Algorithms'];
 
   return (
-    <section id="skills" className="py-24 reveal">
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-slate-800 mb-12">Technical Skills</h2>
-        <div className="flex flex-wrap justify-center gap-3">
-          {skills.map((skill, idx) => (
-            <span key={idx} className="bg-blue-100 text-blue-800 text-sm px-4 py-2 rounded-full">{skill}</span>
-          ))}
-        </div>
+    <section id="skills" className="py-20 bg-slate-50 text-center px-4 sm:px-6 lg:px-8">
+      <h2 className="text-3xl font-bold mb-8 reveal">Technical Skills</h2>
+      <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-4 reveal">
+        {skills.map(skill => (
+          <span key={skill} className="skill-tag">{skill}</span>
+        ))}
       </div>
     </section>
   );

@@ -1,16 +1,15 @@
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-24 reveal">
-      <div className="container mx-auto px-6 max-w-4xl">
-        <h2 className="text-4xl font-bold text-slate-800 mb-12 text-center">Work Experience</h2>
-        <div className="bg-white rounded-xl shadow-lg p-8 border-l-4 border-blue-600">
-          <h3 className="text-2xl font-semibold text-slate-900">Developer Intern</h3>
-          <p className="text-slate-600">OPLUS R&D Centre, Hyderabad</p>
-          <p className="text-sm text-slate-500 mb-4">May 2024 - Nov 2024</p>
-          <ul className="list-disc list-inside text-slate-600 space-y-2">
-            <li>Built dynamic web apps using React, Node, and SQL.</li>
-            <li>Developed Android applications improving functionality and UX.</li>
-            <li>Automated internal processes using Python tools.</li>
+    <section id="experience" className="py-20 bg-slate-50 text-center px-4 sm:px-6 lg:px-8">
+      <h2 className="text-3xl font-bold mb-8 reveal">Work Experience</h2>
+      <div className="max-w-3xl mx-auto space-y-6 reveal">
+        <div className="bg-white rounded-lg shadow p-6 text-left">
+          <h3 className="text-xl font-semibold text-slate-900">Developer Intern</h3>
+          <p className="text-sm text-slate-500 mb-2">May 2024 - Nov 2024 | OPLUS Research & Development Centre, Hyderabad</p>
+          <ul className="list-disc list-inside text-slate-600 space-y-1">
+            <li>Built web applications using React, Node, SQL for optimized performance.</li>
+            <li>Developed Android applications improving UX and functionality.</li>
+            <li>Automated internal processes with custom Python tools.</li>
           </ul>
         </div>
       </div>

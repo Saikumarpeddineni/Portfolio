@@ -8,7 +8,6 @@ import EducationSection from './components/EducationSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import { useScrollReveal } from './hooks/useScrollReveal';
-import './App.css';
 
 function App() {
   useScrollReveal();

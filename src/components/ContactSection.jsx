@@ -1,15 +1,15 @@
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-24 bg-gradient-to-br from-slate-50 to-indigo-100 text-center reveal">
-      <div className="container mx-auto px-6 max-w-2xl">
-        <h2 className="text-4xl font-bold text-slate-800 mb-8">Get In Touch</h2>
-        <p className="text-lg text-slate-600 mb-6">
-          I am open to new opportunities. Feel free to connect or send me a message.
-        </p>
-        <a href="mailto:saikumarpeddineni18@gmail.com" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
+    <section id="contact" className="py-20 bg-gradient-to-br from-indigo-100 to-slate-50 text-center px-4 sm:px-6 lg:px-8">
+      <h2 className="text-3xl font-bold mb-6 reveal">Get In Touch</h2>
+      <p className="text-lg text-slate-600 max-w-xl mx-auto mb-6 reveal">
+        I'm open to new opportunities. Let's connect if you have a project or role that suits my skills.
+      </p>
+      <div className="flex flex-col sm:flex-row justify-center gap-4 reveal">
+        <a href="mailto:saikumarpeddineni18@gmail.com" className="btn btn-primary w-full sm:w-auto text-center">
           saikumarpeddineni18@gmail.com
         </a>
-        <p className="mt-6 text-slate-600 font-medium">+91 7893611989</p>
+        <p className="text-lg text-slate-600">+91 7893611989</p>
       </div>
     </section>
   );
