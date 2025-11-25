@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-slate-50 text-slate-700 font-sans antialiased selection:bg-indigo-100 selection:text-indigo-700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Custom reveal animation */
 .reveal {
   opacity: 0;
